@@ -10,7 +10,7 @@ export default function App(props) {
   // UseEffect calls function on initialize and whenever state changes.
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (storedTodos.length) setTodos(storedTodos);
+    if (storedTodos?.length) setTodos(storedTodos);
   }, [])
 
   useEffect(() => {
